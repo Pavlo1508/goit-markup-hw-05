@@ -241,7 +241,6 @@ header .container {
 .team {
 	background-color: #F4F4FD;
 	padding: 120px 0;
-	max-width: 1440px;
 	margin: auto;
 }
 
@@ -487,7 +486,7 @@ header .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
@@ -534,7 +533,7 @@ header .container {
 	width: 408px;
 	min-height: 584px;
 	background: #fcfcfc;
-	box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	padding: 72px 24px 24px 24px;
@@ -608,7 +607,7 @@ header .container {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus-within {
+.modal-form-input:focus-within, .modal-form-group .modal-form-input:focus {
 	border-color: #4D5AE5;
 }
 
@@ -621,7 +620,7 @@ header .container {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-container-input:focus-within .modal-form-input-icon {
+.modal-form-group .modal-container-input:focus-within .modal-form-input-icon, .modal-form-group .modal-container-input:focus .modal-form-input-icon {
 	fill: #4D5AE5;
 }
 
@@ -645,7 +644,7 @@ header .container {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-textarea:focus {
+.modal-form-textarea:focus-within, .modal-form-group-textarea .modal-form-textarea:focus {
 	border-color: #4D5AE5;
 }
 
@@ -678,7 +677,7 @@ header .container {
 	fill: transparent;
 }
 
-.modal-form-checkbox-input:checked .modal-form-terms-pp {
+.modal-form-checkbox .modal-form-checkbox-input:checked .modal-form-terms-pp {
 	background-color: #404bbf;
 	border: none;
 	fill: #f4f4fd;
@@ -694,7 +693,7 @@ header .container {
 	margin: 0 auto;
 	min-width: 169px;
 	height: 56px;
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
