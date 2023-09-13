@@ -708,5 +708,10 @@ header .container {
 	background-color: #404BBF;
 }
 
+.modal.is-open {
+	visibility: visible;
+	opacity: 1;
+}
+
 
 
